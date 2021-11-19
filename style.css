@@ -1,0 +1,59 @@
+/* ... */
+
+.classB {
+  background-color: cyan;
+}
+
+/* ... */
+.container {
+  display: flex;
+}
+.classA {
+  display: flex;
+  flex: 1;
+}
+.classB {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .classA {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    display: block;
+  }
+}
+
+/* or use grid */
+
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.classA {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.classB {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  .classA {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    display: block;
+  }
+  .classA {
+    margin-bottom: 5px;
+  }
+} */
